@@ -1,0 +1,17 @@
+export default function Footer() {
+  return (
+    <div class="flex justify-between mt-20 pt-8 border-t-2 border-[#000] bottom-0 flex-col md:flex-row w-[80vw]">
+      <span class="font-[400] text-[14px]">
+        2023 propertytoolkit. All right reserved.
+      </span>
+      <div class="flex space-x-6">
+        <a class="font-[900] text-[14px] border-b-2 border-[#000]" href="">
+          Privacy Policy
+        </a>
+        <a class="font-[900] text-[14px] border-b-2 border-[#000]" href="">
+          Terms of Service
+        </a>
+      </div>
+    </div>
+  );
+}
