@@ -14,10 +14,14 @@
   }
 } */
 
+.radix-themes {
+  --default-font-family: var(--font-lexend);
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 @layer utilities {

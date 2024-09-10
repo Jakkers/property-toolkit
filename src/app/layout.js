@@ -1,3 +1,7 @@
+//importing radix theme
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
+
 import { Lexend } from "next/font/google";
 import "./globals.css";
 
@@ -14,8 +18,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${lexend.className} antialiased`}>{children}</body>
+    <html className={`${lexend.className} antialiased`} lang="en">
+      <body>
+        <Theme appearance="light">{children}</Theme>
+      </body>
     </html>
   );
 }
