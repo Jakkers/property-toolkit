@@ -141,7 +141,8 @@ export default function Home() {
               {/* Testimonial Card 1 */}
               <div className="flex flex-col items-center p-6 rounded-lg shadow-md">
                 <p className="text-gray-700 font-medium mb-2 text-center">
-                  "This software has transformed my property investments!"
+                  &quot;This software has transformed my property
+                  investments!&quot;
                 </p>
                 <p className="text-gray-500 text-sm text-center">- Jane Doe</p>
               </div>
@@ -149,7 +150,8 @@ export default function Home() {
               {/* Testimonial Card 2 */}
               <div className="flex flex-col items-center p-6 rounded-lg shadow-md">
                 <p className="text-gray-700 font-medium mb-2 text-center">
-                  "Simple, effective, and a game-changer for landlords."
+                  &quot;Simple, effective, and a game-changer for
+                  landlords.&quot;
                 </p>
                 <p className="text-gray-500 text-sm text-center">
                   - John Smith
@@ -159,7 +161,8 @@ export default function Home() {
               {/* Testimonial Card 3 */}
               <div className="flex flex-col items-center p-6 rounded-lg shadow-md">
                 <p className="text-gray-700 font-medium mb-2 text-center">
-                  "Highly recommend this tool for every property investor!"
+                  &quot;Highly recommend this tool for every property
+                  investor!&quot;
                 </p>
                 <p className="text-gray-500 text-sm text-center">
                   - Emily Johnson
