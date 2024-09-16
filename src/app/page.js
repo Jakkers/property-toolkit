@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <main className="flex flex-col items-center justify-center bg-gray-50">
         {/* Hero Section with Image */}
-        <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full h-[84vh] items-center justify-center">
+        <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full min-h-[84vh] items-center justify-center">
           {/* Text & Button Content */}
           <div className="flex flex-col py-20 items-start justify-center text-left text-black p-6 w-full lg:w-1/2">
             <h2 className="text-2xl md:text-5xl font-bold mb-4">
@@ -27,7 +27,7 @@ export default function Home() {
 
           {/* Image */}
 
-          <div className="w-full flex md:w-[80vw] lg:w-1/3 h-[80vh] md:items-center">
+          <div className="w-full flex md:w-[80vw] lg:w-1/3 h-[60vh] md:items-center">
             <Image
               src="/norwich.webp"
               alt="Property Image"
