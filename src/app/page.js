@@ -40,7 +40,7 @@ export default function Home() {
 
         {/* Partners Section */}
         <div className="py-8 w-full bg-pt-blue flex flex-col items-center text-center">
-          <p className="text-md text-white mb-4">As seen in</p>
+          <p className="text-md text-white mb-4">All in one place</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-20 items-center">
             <Image
               src="/rightmove-logo.png"
