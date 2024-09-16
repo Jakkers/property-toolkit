@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <main className="flex flex-col items-center justify-center bg-gray-50">
         {/* Hero Section with Image */}
-        <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full min-h-[84vh] items-center justify-center">
+        <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full md:min-h-[84vh] items-center justify-center">
           {/* Text & Button Content */}
           <div className="flex flex-col py-6 md:py-20 items-start justify-center text-left text-black px-6 w-full lg:w-1/2">
             <h2 className="text-2xl md:text-5xl font-bold mb-4">
@@ -19,7 +19,7 @@ export default function Home() {
               free &amp; get our HMO Package for FREE for the first 90 days.
             </p>
             <a href="#cta-form" className="mt-4">
-              <button className="px-6 md:px-8 py-2 md:py-3 bg-pt-orange text-white font-semibold rounded-lg hover:bg-[#d85a2a] transition duration-200">
+              <button className="px-6 pb-2 md:px-8 py-2 md:py-3 bg-pt-orange text-white font-semibold rounded-lg hover:bg-[#d85a2a] transition duration-200">
                 Start Your Free Trial Now
               </button>
             </a>
@@ -27,13 +27,13 @@ export default function Home() {
 
           {/* Image */}
 
-          <div className="w-full flex md:w-[80vw] lg:w-1/3 h-[60vh] md:items-center">
+          <div className="w-full flex md:w-[80vw] lg:w-1/3 min-h-[30vh] md:items-center">
             <Image
               src="/norwich.webp"
               alt="Property Image"
               width={400}
               height={600}
-              className="object-cover md:border-solid md:border-4 md:rounded-2xl md:p-2 md:border-orange-500 md:object-contain w-full"
+              className="object-cover border-solid border-2 rounded-2xl p-2 mt-6 mx-6 border-orange-500 md:object-contain w-full"
             />
           </div>
         </div>
