@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full md:min-h-[84vh] items-center justify-center">
           {/* Text & Button Content */}
           <div className="flex flex-col py-6 md:py-20 items-start justify-center text-left text-black px-6 w-full lg:w-1/2">
-            <h2 className="text-2xl md:text-5xl font-bold mb-4">
+            <h2 className="text-1xl md:text-5xl font-bold mb-4">
               We hope you&apos;re enjoying the Landlord Investment Show
             </h2>
             <p className="text-md md:text-lg mb-4">
