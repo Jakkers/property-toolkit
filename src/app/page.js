@@ -27,7 +27,7 @@ export default function Home() {
 
           {/* Image */}
 
-          <div className="flex w-[80vw] lg:w-1/3 min-h-[30vh] items-center">
+          <div className="flex w-full lg:w-1/3 min-h-[30vh] items-center">
             <Image
               src="/norwich.webp"
               alt="Property Image"
