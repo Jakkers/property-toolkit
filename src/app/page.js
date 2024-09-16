@@ -10,7 +10,7 @@ export default function Home() {
         {/* Hero Section with Image */}
         <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full min-h-[84vh] items-center justify-center">
           {/* Text & Button Content */}
-          <div className="flex flex-col py-20 items-start justify-center text-left text-black p-6 w-full lg:w-1/2">
+          <div className="flex flex-col py-6 md:py-20 items-start justify-center text-left text-black px-6 w-full lg:w-1/2">
             <h2 className="text-2xl md:text-5xl font-bold mb-4">
               We hope you&apos;re enjoying the Landlord Investment Show
             </h2>
