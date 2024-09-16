@@ -6,7 +6,7 @@ import { Card } from "@radix-ui/themes";
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col items-center justify-center bg-gray-50">
+      <main className="flex flex-col items-center justify-center w-full bg-gray-50">
         {/* Hero Section with Image */}
         <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full md:min-h-[84vh] items-center justify-center">
           {/* Text & Button Content */}
@@ -27,13 +27,13 @@ export default function Home() {
 
           {/* Image */}
 
-          <div className="flex w-full lg:w-1/3 min-h-[30vh] items-center">
+          <div className="flex w-full lg:w-1/3 pt-6 px-6 items-center">
             <Image
               src="/norwich.webp"
               alt="Property Image"
-              width={400}
-              height={600}
-              className="object-cover border-solid border-2 rounded-2xl p-2 mt-6 mx-6 border-orange-500 md:object-contain w-full"
+              width={700}
+              height={700}
+              className="border-solid border-2 rounded-2xl p-2 border-orange-500 object-contain w-full"
             />
           </div>
         </div>
