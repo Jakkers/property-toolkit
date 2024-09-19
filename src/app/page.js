@@ -71,7 +71,7 @@ export default function Home() {
 
         {/* New Property Toolkit Section */}
         <div className="w-full px-4 py-12 bg-white flex flex-col items-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-[#303c81] mb-6">
+          <h3 className="text-2xl text-center md:text-3xl font-bold text-[#303c81] mb-6">
             Discover the Best Yielding Property Deals in Your Location
           </h3>
           <p className="text-gray-700 text-lg md:text-xl text-center max-w-3xl mb-12">
@@ -153,7 +153,7 @@ export default function Home() {
         </div>
 
         {/* Main Content Section */}
-        <div className="flex flex-col items-center justify-center w-full px-4 py-8 space-y-12">
+        <div className="flex flex-col items-center justify-center w-full py-8 space-y-12">
           {/* Types of Property Deals */}
           <div className="w-full max-w-2xl text-center space-y-6">
             <h3 className="text-2xl font-bold text-[#303c81]">Focus on HMOs</h3>
@@ -320,11 +320,10 @@ export default function Home() {
             id="cta-form"
             className="w-full h-screen flex items-center justify-center bg-pt-blue"
           >
-            <div className="w-full max-w-md text-center py-12 px-6 rounded-lg shadow-lg bg-white">
+            <div className="w-full max-w-md text-center py-12 px-6 bg-white rounded-lg shadow-lg mx-auto">
               <h3 className="text-2xl font-bold mb-6 text-[#303c81]">
-                What are you waiting for?
+                Ready to Get Started?
               </h3>
-              <p className="text-gray-700">Sign up for FREE today.</p>
               <PlaceholderForm />
             </div>
           </div>
