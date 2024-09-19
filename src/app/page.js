@@ -322,8 +322,9 @@ export default function Home() {
         >
           <div className="w-full max-w-md text-center py-12 px-6 bg-white rounded-lg shadow-lg mx-auto">
             <h3 className="text-2xl font-bold mb-6 text-[#303c81]">
-              Ready to Get Started?
+              What are you waiting for?
             </h3>
+            <p className="text-gray-700">Sign up for FREE today.</p>
             <PlaceholderForm />
           </div>
         </div>
