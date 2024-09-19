@@ -153,7 +153,7 @@ export default function Home() {
         </div>
 
         {/* Main Content Section */}
-        <div className="flex flex-col items-center justify-center w-full py-8 space-y-12">
+        <div className="flex flex-col items-center justify-center w-full py-8 pb-20 space-y-12 px-6">
           {/* Types of Property Deals */}
           <div className="w-full max-w-2xl text-center space-y-6">
             <h3 className="text-2xl font-bold text-[#303c81]">Focus on HMOs</h3>
@@ -164,7 +164,7 @@ export default function Home() {
             </p>
           </div>
           {/* How It Works Steps */}
-          <div className="w-full max-w-2xl px-4 py-8 ">
+          <div className="w-full max-w-2xl px-4 py-8 mx-6">
             <h3 className="text-2xl font-bold text-center text-[#303c81] mb-6">
               How It Works
             </h3>
@@ -291,7 +291,7 @@ export default function Home() {
           </div>
 
           {/* What's Included Section */}
-          <div className="w-full max-w-2xl text-center bg-white shadow-lg rounded-lg p-6 pb-12 md:p-8">
+          <div className="w-full max-w-2xl text-center bg-white shadow-lg rounded-lg p-6 md:p-8">
             <h3 className="text-2xl md:text-3xl font-bold text-[#303c81] mb-4">
               What&apos;s Included in Your Free Trial
             </h3>
@@ -314,18 +314,17 @@ export default function Home() {
               </li>
             </ul>
           </div>
-
-          {/* Call to Action Form */}
-          <div
-            id="cta-form"
-            className="w-full h-screen flex items-center justify-center bg-pt-blue"
-          >
-            <div className="w-full max-w-md text-center py-12 px-6 bg-white rounded-lg shadow-lg mx-auto">
-              <h3 className="text-2xl font-bold mb-6 text-[#303c81]">
-                Ready to Get Started?
-              </h3>
-              <PlaceholderForm />
-            </div>
+        </div>
+        {/* Call to Action Form */}
+        <div
+          id="cta-form"
+          className="w-full h-screen flex items-center justify-center px-6 bg-pt-blue"
+        >
+          <div className="w-full max-w-md text-center py-12 px-6 bg-white rounded-lg shadow-lg mx-auto">
+            <h3 className="text-2xl font-bold mb-6 text-[#303c81]">
+              Ready to Get Started?
+            </h3>
+            <PlaceholderForm />
           </div>
         </div>
 
