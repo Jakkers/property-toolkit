@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import PlaceholderForm from "@/components/PlaceholderForm";
 import Image from "next/image";
 import { Card } from "@radix-ui/themes";
+import YoutubeVideo from "@/components/YoutubeVideo";
 
 export default function Home() {
   return (
@@ -12,11 +13,11 @@ export default function Home() {
           {/* Text & Button Content */}
           <div className="flex flex-col py-6 md:py-20 items-start justify-center text-left text-black px-6 w-full lg:w-1/2">
             <h2 className="text-xl md:text-5xl font-bold mb-4">
-              We hope you&apos;re enjoying the Landlord Investment Show
+              Want to get your Property Investment Edge
             </h2>
             <p className="text-md md:text-lg mb-4">
-              Get your Property Investment Edge and claim your first 14 days
-              free &amp; get our HMO Package for FREE for the first 90 days.
+              Claim your first 14 days for FREE plus our HMO Package for the
+              first 90 days.
             </p>
             <a href="#cta-form" className="mt-4">
               <button className="px-6 pb-2 md:px-8 py-2 md:py-3 bg-pt-orange text-white font-semibold rounded-lg hover:bg-[#d85a2a] transition duration-200">
@@ -40,7 +41,9 @@ export default function Home() {
 
         {/* Partners Section */}
         <div className="py-8 w-full bg-pt-blue flex flex-col items-center text-center">
-          <p className="text-md text-white mb-4">All in one place</p>
+          <p className="text-md text-white mb-4">
+            All Property Deals In one place
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-20 items-center">
             <Image
               src="/rightmove-logo.png"
@@ -63,6 +66,89 @@ export default function Home() {
               height={100}
               className="mx-auto"
             />
+          </div>
+        </div>
+
+        {/* New Property Toolkit Section */}
+        <div className="w-full px-4 py-12 bg-white flex flex-col items-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#303c81] mb-6">
+            Discover the Best Yielding Property Deals in Your Location
+          </h3>
+          <p className="text-gray-700 text-lg md:text-xl text-center max-w-3xl mb-12">
+            At the click of a button, access the top property deals tailored for
+            your investment needs.
+          </p>
+
+          {/* Investor Types */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl w-full text-left">
+            {/* Investor Category 1 */}
+            <div className="p-6 bg-gray-100 rounded-lg shadow-lg text-center">
+              <h4 className="text-xl font-semibold text-[#303c81] mb-4">
+                BRRR Investors
+              </h4>
+              <p className="text-gray-600">
+                Investors focused on Buy, Rehab, Rent, Refinance, Repeat.
+              </p>
+            </div>
+
+            {/* Investor Category 2 */}
+            <div className="p-6 bg-gray-100 rounded-lg shadow-lg text-center">
+              <h4 className="text-xl font-semibold text-[#303c81] mb-4">
+                HMO Investors
+              </h4>
+              <p className="text-gray-600">
+                Specialized for Houses in Multiple Occupation deals.
+              </p>
+            </div>
+
+            {/* Investor Category 3 */}
+            <div className="p-6 bg-gray-100 rounded-lg shadow-lg text-center">
+              <h4 className="text-xl font-semibold text-[#303c81] mb-4">
+                Finding Motivated Sellers
+              </h4>
+              <p className="text-gray-600">
+                Get access to properties from motivated sellers for better
+                deals.
+              </p>
+            </div>
+
+            {/* Investor Category 4 */}
+            <div className="p-6 bg-gray-100 rounded-lg shadow-lg text-center">
+              <h4 className="text-xl font-semibold text-[#303c81] mb-4">
+                Below Market Value Deals
+              </h4>
+              <p className="text-gray-600">
+                Find properties selling for less than their market value.
+              </p>
+            </div>
+
+            {/* Investor Category 5 */}
+            <div className="p-6 bg-gray-100 rounded-lg shadow-lg text-center">
+              <h4 className="text-xl font-semibold text-[#303c81] mb-4">
+                Cheap Square Meter Deals
+              </h4>
+              <p className="text-gray-600">
+                Discover properties with the best price per square meter in your
+                area.
+              </p>
+            </div>
+
+            {/* Coming Soon */}
+            <div className="p-6 bg-gray-100 rounded-lg shadow-lg text-center">
+              <h4 className="text-xl font-semibold text-[#303c81] mb-4">
+                (Coming Soon) Serviced Accommodation Investor
+              </h4>
+              <p className="text-gray-600">
+                New tools for short-term rental investors arriving soon.
+              </p>
+            </div>
+          </div>
+
+          {/* Coming in 2025 */}
+          <div className="mt-12 w-full text-center">
+            <h4 className="text-xl font-semibold text-[#303c81]">
+              Coming 2025 - Rent to Rent
+            </h4>
           </div>
         </div>
 
@@ -152,10 +238,7 @@ export default function Home() {
             <h3 className="text-2xl font-bold text-[#303c81]">
               Watch Our Quick Demo
             </h3>
-            <video controls className="w-full rounded-lg shadow-md">
-              <source src="/demo-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <YoutubeVideo />
           </div>
 
           {/* User Testimonials */}
@@ -208,7 +291,7 @@ export default function Home() {
           </div>
 
           {/* What's Included Section */}
-          <div className="w-full max-w-2xl text-center bg-white shadow-lg rounded-lg p-6 md:p-8">
+          <div className="w-full max-w-2xl text-center bg-white shadow-lg rounded-lg p-6 pb-12 md:p-8">
             <h3 className="text-2xl md:text-3xl font-bold text-[#303c81] mb-4">
               What&apos;s Included in Your Free Trial
             </h3>
@@ -233,11 +316,17 @@ export default function Home() {
           </div>
 
           {/* Call to Action Form */}
-          <div id="cta-form" className="w-full max-w-md text-center">
-            <h3 className="text-2xl font-bold mb-6 text-[#303c81]">
-              Ready to Get Started?
-            </h3>
-            <PlaceholderForm />
+          <div
+            id="cta-form"
+            className="w-full h-screen flex items-center justify-center bg-pt-blue"
+          >
+            <div className="w-full max-w-md text-center py-12 px-6 rounded-lg shadow-lg bg-white">
+              <h3 className="text-2xl font-bold mb-6 text-[#303c81]">
+                What are you waiting for?
+              </h3>
+              <p className="text-gray-700">Sign up for FREE today.</p>
+              <PlaceholderForm />
+            </div>
           </div>
         </div>
 
