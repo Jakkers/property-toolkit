@@ -31,7 +31,7 @@ import React from "react";
 
 const PlaceholderForm = () => {
   return (
-    <form className="flex flex-col w-full max-w-[400px] mx-auto space-y-4">
+    <form className="flex flex-col w-full max-w-2xl mx-auto space-y-4">
       {/* Name Field */}
       <div className="flex flex-col">
         <label htmlFor="name" className="text-white text-left font-medium mb-1">

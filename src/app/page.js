@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import PlaceholderForm from "@/components/PlaceholderForm";
 import Image from "next/image";
-import { Card } from "@radix-ui/themes";
 import YoutubeVideo from "@/components/YoutubeVideo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,29 +8,14 @@ import {
   faChartLine,
   faGift,
 } from "@fortawesome/free-solid-svg-icons";
+import Header from "@/components/Header";
+import Form from "@/components/Form";
 
 export default function Home() {
   return (
     <>
+      <Header />
       <main className="flex flex-col items-center justify-center w-full bg-gray-50">
-        {/* Hero Section with Image */}
-        {/* <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full md:min-h-[84vh] items-center justify-center"> */}
-        {/* Text & Button Content */}
-        {/* <div className="flex flex-col py-6 md:py-20 items-start justify-center text-left text-black px-6 w-full lg:w-1/2">
-            <h2 className="text-xl md:text-5xl font-bold mb-4">
-              Want to get your Property Investment Edge
-            </h2>
-            <p className="text-md md:text-lg mb-4">
-              Claim your first 14 days for FREE plus our HMO Package for the
-              first 90 days.
-            </p>
-            <a href="#cta-form" className="mt-4">
-              <button className="px-6 pb-2 md:px-8 py-2 md:py-3 bg-pt-orange text-white font-semibold rounded-lg hover:bg-[#d85a2a] transition duration-200">
-                Start Your Free Trial Now
-              </button>
-            </a>
-          </div> */}
-
         {/* Hero Section with Image */}
         <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full md:min-h-[84vh] items-center justify-center">
           {/* Text & Button Content */}
@@ -49,7 +33,7 @@ export default function Home() {
               </button>
             </a>
 
-            {/* Highlights Section - row on larger screens, column on mobile */}
+            {/* Highlights Section */}
             <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 justify-start items-start w-full py-8">
               <div className="flex items-center">
                 <div className="w-12 h-12 p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
@@ -117,7 +101,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* New Property Toolkit Section */}
+        {/* Property Toolkit Section */}
         <div className="w-full px-4 py-12 bg-white flex flex-col items-center">
           <h3 className="text-2xl text-center md:text-3xl font-bold text-[#303c81] mb-6">
             Discover the Best Yielding Property Deals in Your Location
@@ -203,7 +187,7 @@ export default function Home() {
         {/* Main Content Section */}
         <div className="flex flex-col items-center justify-center w-full py-8 pb-20 space-y-12 px-6">
           {/* How It Works Steps */}
-          <div className="w-full max-w-2xl px-4 py-8 mx-6">
+          <div className="w-full max-w-3xl px-4 py-8 mx-6">
             <h3 className="text-2xl font-bold text-center text-[#303c81] mb-6">
               How It Works
             </h3>
@@ -227,7 +211,9 @@ export default function Home() {
                 <h4 className="text-lg font-semibold text-[#303c81] mb-2">
                   Search your area
                 </h4>
-                <p className="text-gray-700">Discover local options</p>
+                <p className="text-gray-700">
+                  Discover all property deals in your area{" "}
+                </p>
               </div>
 
               {/* Step 3 */}
@@ -238,13 +224,15 @@ export default function Home() {
                 <h4 className="text-lg font-semibold text-[#303c81] mb-2">
                   Get top deals
                 </h4>
-                <p className="text-gray-700">Maximise your savings</p>
+                <p className="text-gray-700">
+                  Maximise your investment opportunities
+                </p>
               </div>
             </div>
           </div>
 
           {/* Screenshots */}
-          <div className="w-full max-w-2xl text-center space-y-6">
+          <div className="w-full max-w-3xl text-center space-y-6">
             <h3 className="text-2xl font-bold text-[#303c81]">
               See It in Action
             </h3>
@@ -267,7 +255,7 @@ export default function Home() {
           </div>
 
           {/* Video Section */}
-          <div className="w-full max-w-2xl text-center space-y-6">
+          <div className="w-full max-w-3xl text-center space-y-6">
             <h3 className="text-2xl font-bold text-[#303c81]">
               Watch Our Quick Demo
             </h3>
@@ -275,7 +263,7 @@ export default function Home() {
           </div>
 
           {/* User Testimonials */}
-          <div className="w-full max-w-2xl px-4 py-6">
+          <div className="w-full max-w-3xl px-4 py-6">
             <h3 className="text-2xl font-bold text-center text-[#303c81] mb-6">
               What Our Users Are Saying
             </h3>
@@ -314,7 +302,7 @@ export default function Home() {
           </div>
 
           {/* Simplicity of Use */}
-          <div className="w-full max-w-2xl text-center space-y-6">
+          <div className="w-full max-w-3xl text-center space-y-6">
             <h3 className="text-2xl font-bold text-[#303c81]">
               Simplicity at Its Core
             </h3>
@@ -324,7 +312,7 @@ export default function Home() {
           </div>
 
           {/* What's Included Section */}
-          <div className="w-full max-w-2xl text-center bg-white shadow-lg rounded-lg p-6 md:p-8">
+          <div className="w-full max-w-3xl text-center bg-white shadow-lg rounded-lg p-6 md:p-8">
             <h3 className="text-2xl md:text-3xl font-bold text-[#303c81] mb-4">
               What&apos;s Included in Your Free Trial
             </h3>
@@ -353,12 +341,12 @@ export default function Home() {
           id="cta-form"
           className="w-full h-screen flex items-center justify-center px-6 bg-pt-blue"
         >
-          <div className="w-full max-w-md text-center py-12 px-6 bg-white rounded-lg shadow-lg mx-auto">
+          <div className="w-full max-w-3xl text-center py-12 px-6 bg-white rounded-lg shadow-lg mx-auto">
             <h3 className="text-2xl font-bold mb-6 text-[#303c81]">
               What are you waiting for?
             </h3>
             <p className="text-gray-700">Sign up for FREE today.</p>
-            <PlaceholderForm />
+            <Form />
           </div>
         </div>
 
