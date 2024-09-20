@@ -3,11 +3,35 @@ import PlaceholderForm from "@/components/PlaceholderForm";
 import Image from "next/image";
 import { Card } from "@radix-ui/themes";
 import YoutubeVideo from "@/components/YoutubeVideo";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faClock,
+  faChartLine,
+  faGift,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
     <>
       <main className="flex flex-col items-center justify-center w-full bg-gray-50">
+        {/* Hero Section with Image */}
+        {/* <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full md:min-h-[84vh] items-center justify-center"> */}
+        {/* Text & Button Content */}
+        {/* <div className="flex flex-col py-6 md:py-20 items-start justify-center text-left text-black px-6 w-full lg:w-1/2">
+            <h2 className="text-xl md:text-5xl font-bold mb-4">
+              Want to get your Property Investment Edge
+            </h2>
+            <p className="text-md md:text-lg mb-4">
+              Claim your first 14 days for FREE plus our HMO Package for the
+              first 90 days.
+            </p>
+            <a href="#cta-form" className="mt-4">
+              <button className="px-6 pb-2 md:px-8 py-2 md:py-3 bg-pt-orange text-white font-semibold rounded-lg hover:bg-[#d85a2a] transition duration-200">
+                Start Your Free Trial Now
+              </button>
+            </a>
+          </div> */}
+
         {/* Hero Section with Image */}
         <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full md:min-h-[84vh] items-center justify-center">
           {/* Text & Button Content */}
@@ -24,6 +48,30 @@ export default function Home() {
                 Start Your Free Trial Now
               </button>
             </a>
+
+            {/* Highlights Section - row on larger screens, column on mobile */}
+            <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 justify-start items-start w-full py-8">
+              <div className="flex items-center">
+                <div className="w-12 h-12 p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
+                  <FontAwesomeIcon icon={faClock} className="text-2xl" />
+                </div>
+                <p className="text-gray-700">Save Time</p>
+              </div>
+
+              <div className="flex items-center">
+                <div className="w-12 h-12 p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
+                  <FontAwesomeIcon icon={faChartLine} className="text-2xl" />
+                </div>
+                <p className="text-gray-700">Find Best ROI Deal</p>
+              </div>
+
+              <div className="flex items-center">
+                <div className="w-12 h-12 p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
+                  <FontAwesomeIcon icon={faGift} className="text-2xl" />
+                </div>
+                <p className="text-gray-700">Try For Free</p>
+              </div>
+            </div>
           </div>
 
           {/* Image */}
@@ -154,15 +202,6 @@ export default function Home() {
 
         {/* Main Content Section */}
         <div className="flex flex-col items-center justify-center w-full py-8 pb-20 space-y-12 px-6">
-          {/* Types of Property Deals */}
-          <div className="w-full max-w-2xl text-center space-y-6">
-            <h3 className="text-2xl font-bold text-[#303c81]">Focus on HMOs</h3>
-            <p className="text-gray-700">
-              Our software is perfect for managing Houses in Multiple Occupation
-              (HMOs). Plus, it works great for single lets, holiday rentals, and
-              commercial properties too.
-            </p>
-          </div>
           {/* How It Works Steps */}
           <div className="w-full max-w-2xl px-4 py-8 mx-6">
             <h3 className="text-2xl font-bold text-center text-[#303c81] mb-6">
@@ -177,9 +216,7 @@ export default function Home() {
                 <h4 className="text-lg font-semibold text-[#303c81] mb-2">
                   Sign Up
                 </h4>
-                <p className="text-gray-700">
-                  Sign up for a free trial and get started in minutes.
-                </p>
+                <p className="text-gray-700">Get your free account today</p>
               </div>
 
               {/* Step 2 */}
@@ -188,11 +225,9 @@ export default function Home() {
                   2
                 </div>
                 <h4 className="text-lg font-semibold text-[#303c81] mb-2">
-                  Add Your Property
+                  Search your area
                 </h4>
-                <p className="text-gray-700">
-                  Easily add your property details to our platform.
-                </p>
+                <p className="text-gray-700">Discover local options</p>
               </div>
 
               {/* Step 3 */}
@@ -201,11 +236,9 @@ export default function Home() {
                   3
                 </div>
                 <h4 className="text-lg font-semibold text-[#303c81] mb-2">
-                  Manage with Ease
+                  Get top deals
                 </h4>
-                <p className="text-gray-700">
-                  Start managing your property deals with ease and confidence.
-                </p>
+                <p className="text-gray-700">Maximise your savings</p>
               </div>
             </div>
           </div>
