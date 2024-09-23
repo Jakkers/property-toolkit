@@ -1,5 +1,4 @@
-// components/HubSpotScriptLoader.js
-"use client"; // Ensure this runs on the client side
+"use client";
 
 import { useEffect } from "react";
 
@@ -12,11 +11,10 @@ export default function HubSpotScriptLoader() {
     script.id = "hs-script-loader";
     document.body.appendChild(script);
 
-    // Cleanup function to remove the script if necessary
     return () => {
       document.body.removeChild(script);
     };
   }, []);
 
-  return null; // This component doesn't render anything visual
+  return null;
 }
