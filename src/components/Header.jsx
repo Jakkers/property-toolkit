@@ -55,8 +55,8 @@ export default function Header() {
                 className="block md:hidden" // Show on mobile
                 src="/property-toolkit-logo-small.svg" // Use smaller logo for mobile
                 alt="logo"
-                width={120}
-                height={30}
+                width={35}
+                height={35}
               />
             </Link>
           </div>
