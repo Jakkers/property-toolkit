@@ -11,18 +11,14 @@ const lexend = Lexend({
   weight: "variable",
 });
 
-// Metadata including Font Awesome CSS
+// Metadata
 export const metadata = {
   title: "Property Toolkit - Sign Up Today",
   description:
     "Get your Property Investment Edge and claim your first 14 days free & get our HMO Package for FREE for the first 90 days",
   icons: {
-    icon: "/path/to/your/favicon.ico", // Optional, path to your favicon
+    icon: "/path/to/your/favicon.ico",
   },
-  // Add external stylesheets in the `metadata` object
-  stylesheets: [
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css",
-  ],
 };
 
 export default function RootLayout({ children }) {
