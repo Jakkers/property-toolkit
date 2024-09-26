@@ -41,11 +41,18 @@ export default function Header() {
           <div className="shrink-0 flex items-center">
             <Link href="/">
               <Image
-                className="block"
-                src={"/property-toolkit-logo.svg"}
+                className="hidden md:block" // Hide on mobile
+                src="/property-toolkit-logo.svg"
                 alt="logo"
                 width={220}
                 height={51}
+              />
+              <Image
+                className="block md:hidden" // Show on mobile
+                src="/property-toolkit-logo-small.svg" // Use smaller logo for mobile
+                alt="logo"
+                width={120}
+                height={30}
               />
             </Link>
           </div>
