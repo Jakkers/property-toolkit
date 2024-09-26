@@ -111,8 +111,8 @@ export default function CookieBanner() {
     <>
       {/* Cookie Banner */}
       {isBannerVisible && !cookiesAccepted && (
-        <div className="cookie-banner fixed bottom-0 left-0 w-full bg-pt-blue text-white py-4 px-6 flex justify-between items-center shadow-lg z-50">
-          <p className="text-sm">
+        <div className="cookie-banner fixed bottom-0 left-0 w-full bg-pt-blue text-white py-4 px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center shadow-lg z-50">
+          <p className="text-xs sm:text-sm mb-2 sm:mb-0">
             We use cookies to improve your experience and analyze traffic. By
             clicking &quot;Accept&quot;, you consent to our use of cookies. Read
             our
@@ -121,16 +121,16 @@ export default function CookieBanner() {
             </a>
             .
           </p>
-          <div className="flex space-x-4">
+          <div className="flex space-x-2 sm:space-x-4">
             <button
               onClick={acceptCookies}
-              className="bg-pt-orange text-white px-4 py-2 rounded-md hover:bg-[#d85a2a] transition-colors duration-300"
+              className="bg-pt-orange text-white text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2 rounded-md hover:bg-[#d85a2a] transition-colors duration-300"
             >
               Accept
             </button>
             <button
               onClick={declineCookies}
-              className="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-500 transition-colors duration-300"
+              className="bg-gray-600 text-white text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2 rounded-md hover:bg-gray-500 transition-colors duration-300"
             >
               Decline
             </button>
@@ -143,7 +143,7 @@ export default function CookieBanner() {
         <div className="fixed bottom-4 right-4">
           <button
             onClick={handleOptOut}
-            className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-500 transition-colors duration-300"
+            className="bg-red-600 text-white text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-2 rounded-md hover:bg-red-500 transition-colors duration-300"
           >
             Opt-out of Cookies
           </button>
