@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer";
-import PlaceholderForm from "@/components/PlaceholderForm";
+
 import Image from "next/image";
 import YoutubeVideo from "@/components/YoutubeVideo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,14 +36,14 @@ export default function Home() {
             {/* Highlights Section */}
             <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 justify-start items-start w-full py-8">
               <div className="flex items-center">
-                <div className="w-12 h-12 p-2 sm:p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
+                <div className="w-12 h-12 p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
                   <FontAwesomeIcon icon={faClock} className="text-2xl" />
                 </div>
                 <p className="text-gray-700 text-sm sm:text-base">Save Time</p>
               </div>
 
               <div className="flex items-center">
-                <div className="w-12 h-12 p-2 sm:p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
+                <div className="w-12 h-12 p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
                   <FontAwesomeIcon icon={faChartLine} className="text-2xl" />
                 </div>
                 <p className="text-gray-700 text-sm sm:text-base">
@@ -52,7 +52,7 @@ export default function Home() {
               </div>
 
               <div className="flex items-center">
-                <div className="w-12 h-12 p-2 sm:p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
+                <div className="w-12 h-12 p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
                   <FontAwesomeIcon icon={faGift} className="text-2xl" />
                 </div>
                 <p className="text-gray-700 text-sm sm:text-base">
