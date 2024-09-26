@@ -37,14 +37,20 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 justify-start items-start w-full py-8">
               <div className="flex items-center">
                 <div className="w-12 h-12 p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
-                  <FontAwesomeIcon icon={faClock} className="text-2xl" />
+                  <FontAwesomeIcon
+                    icon={faClock}
+                    className="text-xl sm:text-2xl"
+                  />
                 </div>
                 <p className="text-gray-700 text-sm sm:text-base">Save Time</p>
               </div>
 
               <div className="flex items-center">
                 <div className="w-12 h-12 p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
-                  <FontAwesomeIcon icon={faChartLine} className="text-2xl" />
+                  <FontAwesomeIcon
+                    icon={faChartLine}
+                    className="text-xl sm:text-2xl"
+                  />
                 </div>
                 <p className="text-gray-700 text-sm sm:text-base">
                   Find Best ROI Deal
@@ -53,7 +59,10 @@ export default function Home() {
 
               <div className="flex items-center">
                 <div className="w-12 h-12 p-3 flex items-center justify-center bg-[#303c81] text-white rounded-full mr-4">
-                  <FontAwesomeIcon icon={faGift} className="text-2xl" />
+                  <FontAwesomeIcon
+                    icon={faGift}
+                    className="text-xl sm:text-2xl"
+                  />
                 </div>
                 <p className="text-gray-700 text-sm sm:text-base">
                   Try For Free
