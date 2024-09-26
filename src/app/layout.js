@@ -1,10 +1,9 @@
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
-
 import { Lexend } from "next/font/google";
 import "./globals.css";
 
-import HubSpotScriptLoader from "@/components/HubSpotScriptLoader";
+import CookieBanner from "@/components/CookieBanner";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -21,8 +20,8 @@ export default function RootLayout({ children }) {
   return (
     <html className={`${lexend.className} antialiased`} lang="en">
       <body>
-        {/* HubSpot script */}
-        <HubSpotScriptLoader />
+        {/* Cookie Banner with HubSpot script management */}
+        <CookieBanner />
         <Theme appearance="light">{children}</Theme>
       </body>
     </html>

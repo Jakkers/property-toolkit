@@ -339,7 +339,7 @@ export default function Home() {
         {/* Call to Action Form */}
         <div
           id="cta-form"
-          className="w-full h-screen flex items-center justify-center px-6 bg-pt-blue"
+          className="w-full min-h-screen flex items-center justify-center py-20 px-6 bg-pt-blue"
         >
           <div className="w-full max-w-3xl text-center py-12 px-6 bg-white rounded-lg shadow-lg mx-auto">
             <h3 className="text-2xl font-bold mb-6 text-[#303c81]">

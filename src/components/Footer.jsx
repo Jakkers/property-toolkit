@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="flex space-x-6">
         <Link
           className="font-[900] text-[14px] border-b-2 border-[#000]"
-          href=""
+          href="/privacy-policy"
         >
           Privacy Policy
         </Link>
