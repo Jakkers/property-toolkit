@@ -4,6 +4,7 @@ import { Lexend } from "next/font/google";
 import "./globals.css";
 
 import CookieBanner from "@/components/CookieBanner";
+import Header from "@/components/Header";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html className={`${lexend.className} antialiased`} lang="en">
       <body>
+        <Header />
         {/* Cookie Banner with HubSpot script management */}
         <CookieBanner />
         <Theme appearance="light">{children}</Theme>

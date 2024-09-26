@@ -1,5 +1,4 @@
 import Footer from "@/components/Footer";
-
 import Image from "next/image";
 import YoutubeVideo from "@/components/YoutubeVideo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,14 +7,12 @@ import {
   faChartLine,
   faGift,
 } from "@fortawesome/free-solid-svg-icons";
-import Header from "@/components/Header";
 import Form from "@/components/Form";
 
 export default function Home() {
   return (
     <>
-      <Header />
-      <main className="flex flex-col items-center justify-center w-full bg-gray-50">
+      <main className="flex pt-20 flex-col items-center justify-center w-full bg-gray-50">
         {/* Hero Section with Image */}
         <div className="flex flex-col-reverse md:w-[80vw] lg:w-[100vw] lg:flex-row ld:px-6 xl:px-10 w-full md:min-h-[84vh] items-center justify-center">
           {/* Text & Button Content */}
