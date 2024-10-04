@@ -259,22 +259,22 @@ export default function Home() {
           </div>
 
           {/* User Testimonials */}
-          <div className="w-full max-w-3xl px-4 py-6">
+          {/* <div className="w-full max-w-3xl px-4 py-6">
             <h3 className="text-2xl font-bold text-center text-[#303c81] mb-6">
               What Our Users Are Saying
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              {/* Testimonial Card 1 */}
-              <div className="flex flex-col items-center p-6 rounded-lg shadow-md">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"> */}
+          {/* Testimonial Card 1 */}
+          {/* <div className="flex flex-col items-center p-6 rounded-lg shadow-md">
                 <p className="text-gray-700 font-medium mb-2 text-center">
                   &quot;This software has transformed my property
                   investments!&quot;
                 </p>
                 <p className="text-gray-500 text-sm text-center">- Jane Doe</p>
-              </div>
+              </div> */}
 
-              {/* Testimonial Card 2 */}
-              <div className="flex flex-col items-center p-6 rounded-lg shadow-md">
+          {/* Testimonial Card 2 */}
+          {/* <div className="flex flex-col items-center p-6 rounded-lg shadow-md">
                 <p className="text-gray-700 font-medium mb-2 text-center">
                   &quot;Simple, effective, and a game-changer for
                   landlords.&quot;
@@ -282,10 +282,10 @@ export default function Home() {
                 <p className="text-gray-500 text-sm text-center">
                   - John Smith
                 </p>
-              </div>
+              </div> */}
 
-              {/* Testimonial Card 3 */}
-              <div className="flex flex-col items-center p-6 rounded-lg shadow-md">
+          {/* Testimonial Card 3 */}
+          {/* <div className="flex flex-col items-center p-6 rounded-lg shadow-md">
                 <p className="text-gray-700 font-medium mb-2 text-center">
                   &quot;Highly recommend this tool for every property
                   investor!&quot;
@@ -295,7 +295,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Simplicity of Use */}
           <div className="w-full max-w-3xl text-center space-y-6">
